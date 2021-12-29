@@ -1,0 +1,97 @@
+$dark-blue: #283e51;
+$light-blue: #4b79a1;
+$yellow: #fcb92b;
+
+body {
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container__ {
+	margin: 0 auto;
+	background: #4b79a1; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		#4b79a1,
+		#283e51
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(#4b79a1, #182938);
+	min-height: 310vh;
+	padding: 0 3em;
+
+	@media only screen and (max-width: 1366px) {
+		width: 1366px;
+	}
+
+	@media only screen and (min-width: 1920px) {
+		width: 1920px;
+	}
+}
+.card {
+	border-radius: 1em;
+	border-bottom: 5px solid $yellow;
+}
+
+.dash {
+	border-top: 2px solid $yellow;
+}
+
+#pdf-header {
+	h4#summary-title {
+		color: $yellow;
+	}
+	.logo-wrapper {
+		width: 200px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.company-name {
+		color: #fff;
+	}
+
+	.card {
+		border-radius: 1em;
+	}
+}
+
+#client-data {
+	.card {
+		min-height: 150px;
+	}
+	#name {
+		color: $light-blue;
+	}
+
+	#address {
+		color: #999999;
+	}
+
+	#cust-id {
+		h5,
+		h6 {
+			color: $dark-blue;
+		}
+
+		h3 {
+			color: $light-blue;
+		}
+	}
+}
+
+#invoice-date {
+	.card {
+		min-height: 160px;
+	}
+}
+
+#footer {
+   height: 300px;
+
+   p {
+      position: absolute;
+      bottom: 0;
+      left: 42%;
+   }
+}
