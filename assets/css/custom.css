@@ -69,6 +69,11 @@ body {
   min-height: 160px;
 }
 
+#additional-info h5 {
+  font-weight: bold;
+  color: #fcb92b;
+}
+
 #footer {
   height: 300px;
 }
