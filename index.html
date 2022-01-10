@@ -131,15 +131,18 @@
         </section>
 
         <section id="invoice-detail" class="py-4 ">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-8">
+            <div class="row">
+                <div class="col-7">
+                    <div class="card" id="table-desc">
+                        <div class="card-body">
+                           <h5 class="fw-bold">Rincian Pembayaran</h5>
+                           <h6 class="fst-italic">Payment Details</h6>
+                           <hr>
                             <table class="table">
                                 <thead>
                                     <tr class="text-center">
                                         <th style="width: 10%;">No</th>
-                                        <th style="width: 70%;">Desctiption</th>
+                                        <th style="width: 70%;">Description</th>
                                         <th style="width: 200%;">Price</th>
                                     </tr>
                                 </thead>
@@ -161,38 +164,108 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col-4 border-start">
-                            <h3 class="fw-bold">Relabs Info</h3>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem, ipsum.</li>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="card" id="tax-card">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Informasi Faktur Pajak</h5>
+                            <h6 class="fst-italic">Tax Receipt Information</h6>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-5">
+                                            <h6 class="fw-bold">Nama Perusahaan</h6>
+                                            <p class="fst-italic">Company Name</p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-7">
+                                            <h6 class="fw-bold">: PT. Relabs Net DayaCipta</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-5">
+                                            <h6 class="fw-bold">Alamat NPWP</h6>
+                                            <p class="fst-italic">Tax ID Address</p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-7">
+                                            <h6 class="fw-bold">: Jln. Blotan No. 18, Kayen No.18 Wedomartani Ngemplak</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-5">
+                                            <h6 class="fw-bold">NPWP</h6>
+                                            <p class="fst-italic">Tax ID</p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-7">
+                                            <h6 class="fw-bold">: 96.880.906.1-542.000</h6>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="row mt-4" id="additional-info">
-                <div class="col-md-7">
-                    <img src="assets/image/ads.png" alt="" class="rounded-3" style="width: 100%;">
-                </div>
-                <div class="col-md-5">
+                <div class="col-md-12 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <p class="fst-italic">Izin pembubuhan tanda bea materai lunas dengan sistem komputerisasi no. SI-00015/SK/WPJ.06/KP.0803/2019</p>
-                            <p class="fst-italic">Sign affixing stamp duty paid by computerized system is based on letter no. SI-
-                                00015/SK/WPJ.06/KP.0803/2019</p>
+                            <h5 class="fw-bold">Informasi Penting</h5>
+                            <h6 class="fst-italic">Important Information</h6>
+                            <hr>
+                            <div class="row flex-row-reverse">
+                                <div class="col-md-6">
+                                    <p class="fw-bold">Izin pembubuhan tanda bea materai lunas dengan sistem komputerisasi no. SI-00015/SK/WPJ.06/KP.0803/2019</p>
+                                    <p class="fst-italic">Sign affixing stamp duty paid by computerized system is based on letter no. SI-
+                                        00015/SK/WPJ.06/KP.0803/2019</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="fw-bold">
+                                        Jasa internet dikenakan PPh 23 sebesar 2% berdasarkan Peraturan Menteri Keuangan
+                                        nomor 141/PMK.03/2015, berlaku mulai 26 Agustus 2015. Jika Anda terdaftar sebagai
+                                        pelanggan Perusahaan, pastikan nilai pembayaran Anda sudah dipotong PPh 23.
+                                    </p>
+                                    <p class="fst-italic mb-0">
+                                        Internet services are subject to Income Tax Article 23 in accordance with Peraturan Menteri
+                                        Keuangan nomor 141/PMK.03/2015, valid from August 26, 2015. You are registered as a
+                                        customer of the Company, please make sure your payment amount already deducted Income
+                                        Tax 23.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card" id="ads">
+                       
+                       <div class="overlay" id="overlay">
+                        <div class="row">
+                           <div class="col-md-5">
+                              <img src="./assets/image/logo-light.png" alt="logo" srcset="" width="150">
+                           </div>
+                           <div class="col-md-7 pt-4 mt-2">
+                               <h3 class="text-white">
+                                  Browsing, Streaming, Komunikasi Jarak Jauh Tak Pernah <span class="fw-bold">Semudah Ini!</span>
+                               </h3>
+                               <h6 class="text-white fst-italic">Dapatkan Kecepatan & Harga Sesuai yang Anda Inginkan</h6>
+                           </div>
+                        </div>
+                       </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="text-center text-white fw-bold mt-5 position-relative" id="footer">
-         <p>
-            PT. Relabs Net DayaCipta &copy; 2021
-         </p>   
+            <p>
+                PT. Relabs Net DayaCipta &copy; 2021
+            </p>
         </div>
     </div>
 

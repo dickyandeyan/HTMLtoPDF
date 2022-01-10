@@ -2,6 +2,16 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+@media only screen and (max-width: 1366px) {
+  body {
+    max-width: 1366px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  body {
+    max-width: 1366px;
+  }
+}
 
 .container__ {
   margin: 0 auto;
@@ -14,12 +24,12 @@ body {
 }
 @media only screen and (max-width: 1366px) {
   .container__ {
-    width: 1366px;
+    max-width: 1366px;
   }
 }
 @media only screen and (min-width: 1920px) {
   .container__ {
-    width: 1920px;
+    max-width: 1366px;
   }
 }
 
@@ -67,6 +77,29 @@ body {
 
 #invoice-date .card {
   min-height: 160px;
+}
+
+#invoice-detail .card {
+  min-height: 360px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+#additional-info h3 {
+  color: #fcb92b;
+}
+#additional-info .card#ads {
+  position: relative;
+  background-image: url("../image/bg-ads.webp");
+  background-position: 50% 50%;
+  min-height: 180px;
+  border-bottom: none;
+}
+#additional-info .overlay {
+  background: rgba(0, 0, 0, 0.466);
+  position: absolute;
+  min-width: 1253px;
+  height: 180px;
 }
 
 #footer {
